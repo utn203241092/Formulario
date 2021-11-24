@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="407dp"
+        android:layout_height="90dp"
+        android:gravity="center"
+        android:text="@string/indice_de_masa_corporal_ims"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#689F38"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <LinearLayout
+        android:layout_width="407dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="102dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/peso" />
+
+        <EditText
+            android:id="@+id/idpeso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/kilogramos_kg"
+            android:hintTextColor="#757575"
+            android:inputType="numberDecimal"
+            tools:ignore="TextContrastCheck,TextContrastCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="163dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/altura" />
+
+        <EditText
+            android:id="@+id/idaltura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/metros_m"
+            android:hintTextColor="#757575"
+            android:inputType="numberDecimal"
+            tools:ignore="TextContrastCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="413dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="221dp">
+
+        <Button
+            android:id="@+id/btncalcular"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Calcular"
+            tools:ignore="DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="413dp"
+        android:layout_height="457dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="-2dp">
+
+        <TextView
+            android:id="@+id/idimc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/imc" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
